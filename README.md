@@ -1,1 +1,2 @@
 # PSChatGPT
+Pod install Alamofire
