@@ -10,18 +10,17 @@ import Foundation
 import Alamofire
 
 class ChatGPTClient {
-    //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
     /*
      curl https://api.openai.com/v1/edits \
      -H "Content-Type: application/json" \
-     -H "Authorization: Bearer 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" \
+     -H "Authorization: Bearer XXXXXXXXXXXXXXXuBlc" \
      -d '{
      "model": "text-davinci-edit-001",
      "input": "What day of the weke is it?",
      "instruction": "Fix the spelling mistakes"
      }'*/
     let baseURL = "https://api.openai.com/v1"
-    let headers: HTTPHeaders = ["Authorization": "Bearer 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"]
+    let headers: HTTPHeaders = ["Authorization": "Bearer xxxxxxxxxxxyCuBlc"]
     
     func callChatGPTAPI(parameters: [String: Any], url:String, completion: @escaping (Result<String, Error>) -> Void) {
 
